@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zadaća - jQuery</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/sunny/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+
+	<table class="table table-striped table-hover">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Surname</th>
+			<th>Actions</th>
+		</tr>
+		</thead>
+		<tbody id="users">
+			<!-- ovdje idu useri -->
+		</tbody>
+	</table>
+	
+	<button class="btn btn-success" id="addNew">Add new user</button>
+
+	<div id="dialogAdd" title="Add new user">
+		<form>
+			<input type="hidden" name="user" value="6">
+			<div class="form-group">
+				<label for="ime">Name</label>
+				<input type="text" class="form-control" id="ime" name="name" placeholder="Insert name"> 
+			</div>
+			
+			<div class="form-group">
+				<label for="prezime">Surname</label>
+				<input type="text" class="form-control" id="prezime" name="surname" placeholder="Insert surname"> 
+			</div>
+			
+			<button style="display: none" type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+	
+	<div id="dialogEdit" title="Edit user">
+		<form>
+			<input type="hidden" name="user" value="6">
+			<div class="form-group">
+				<label for="ime">Name</label>
+				<input type="text" class="form-control" id="ime" name="name" placeholder="Insert name"> 
+			</div>
+			
+			<div class="form-group">
+				<label for="prezime">Surname</label>
+				<input type="text" class="form-control" id="prezime" name="surname" placeholder="Insert surname"> 
+			</div>
+			
+			<button style="display: none" type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="assets/js/script.js"></script>
+
+</body>
+</html>

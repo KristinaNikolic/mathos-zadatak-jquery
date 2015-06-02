@@ -1,0 +1,15 @@
+button {
+			margin: 5px;
+		}
+		
+		table, th, tr {
+			text-align: center;
+		}
+		
+		#users .edited {
+			background-color: #ffcc00;
+		}
+		
+		#addNew {
+			margin-left: 80px;
+		}
